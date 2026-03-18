@@ -186,14 +186,26 @@ The contact form in `components/sections/ContactForm.tsx` currently simulates su
 
 ## Deployment
 
-This site builds entirely as static output (all pages are statically pre-rendered). It can be deployed to:
+This site is configured for **GitHub Pages** with automatic deployment via GitHub Actions.
 
-- **Vercel** — zero-config (recommended)
-- **Netlify** — with `npm run build` and `out/` directory output
-- **Any static host** — after running `next export` if needed
-- **Docker** — using a Node.js base image running `next start`
+### Setup
 
-For Vercel deployment, connect the repository and Vercel will detect Next.js automatically.
+1. Push to GitHub
+2. Go to **Settings → Pages**
+3. Under **Source**, select **GitHub Actions**
+4. Push to `main` — the workflow builds and deploys automatically
+
+The site will be live at `https://<username>.github.io/<repo-name>/` (or your custom domain).
+
+### Custom Domain
+
+1. In **Settings → Pages**, enter your domain (e.g. `magnarix.com`)
+2. Add a `CNAME` DNS record pointing to `<username>.github.io`
+3. GitHub will provision HTTPS automatically
+
+### Manual Trigger
+
+You can also trigger a deploy manually from **Actions → Deploy to GitHub Pages → Run workflow**.
 
 ## Environment Variables
 

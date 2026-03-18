@@ -1,9 +1,0 @@
-.git
-.github
-.next
-node_modules
-out
-README.md
-Dockerfile
-.dockerignore
-*.md
