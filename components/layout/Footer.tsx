@@ -6,9 +6,9 @@ const footerNav = {
     { label: 'Platform', href: '/platform' },
     { label: 'Use Cases', href: '/use-cases' },
   ],
-  Company: [
+  About: [
     { label: 'Why MagnaRix', href: '/why-magnarix' },
-    { label: 'Company', href: '/company' },
+    { label: 'About', href: '/about' },
     { label: 'Insights', href: '/insights' },
   ],
   'Get Started': [

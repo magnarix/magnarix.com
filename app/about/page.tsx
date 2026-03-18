@@ -4,16 +4,16 @@ import { CTASection } from '@/components/sections/CTASection'
 import { SectionLabel } from '@/components/ui/SectionLabel'
 
 export const metadata: Metadata = {
-  title: 'Company — MagnaRix',
+  title: 'About — MagnaRix',
   description:
     'MagnaRix is building the decision orchestration platform for the enterprise. Our mission, philosophy, and the vision that guides our work.',
 }
 
-export default function CompanyPage() {
+export default function AboutPage() {
   return (
     <>
       <PageHero
-        label="Company"
+        label="About"
         headline="We are building the infrastructure for better organizational judgment."
         subheadline="MagnaRix was founded on the conviction that enterprise organizations deserve a serious, purpose-built platform for governing the decisions that shape them."
       />

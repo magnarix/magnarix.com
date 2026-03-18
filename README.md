@@ -128,7 +128,7 @@ magnarix.com/
 | `/platform` | Platform — five-layer architecture, enterprise readiness, responsible AI |
 | `/use-cases` | Use Cases — seven enterprise decision domains |
 | `/why-magnarix` | Why MagnaRix — the case, tool gap analysis, differentiation |
-| `/company` | Company — mission, vision, principles, founding context |
+| `/about` | About — mission, vision, principles, founding context |
 | `/contact` | Contact — demo request form with validation |
 | `/insights` | Insights — placeholder (content coming) |
 | `/privacy` | Privacy Policy |

@@ -9,7 +9,7 @@ const navLinks = [
   { label: 'Platform', href: '/platform' },
   { label: 'Use Cases', href: '/use-cases' },
   { label: 'Why MagnaRix', href: '/why-magnarix' },
-  { label: 'Company', href: '/company' },
+  { label: 'About', href: '/about' },
 ]
 
 export function Header() {
