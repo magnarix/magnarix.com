@@ -5,9 +5,9 @@
 (function () {
   "use strict";
 
-  /* --- Mobile Nav Toggle --- */
-  const toggle = document.querySelector(".nav__toggle");
-  const navLinks = document.querySelector(".nav__links");
+  /* --- Mobile Nav --- */
+  var toggle = document.querySelector(".nav__toggle");
+  var navLinks = document.querySelector(".nav__links");
 
   if (toggle && navLinks) {
     toggle.addEventListener("click", function () {
@@ -30,18 +30,18 @@
     });
   }
 
-  /* --- Active Nav Highlighting --- */
+  /* --- Active Nav --- */
   var currentPage = window.location.pathname.split("/").pop() || "index.html";
   if (currentPage === "" || currentPage === "/") currentPage = "index.html";
 
   document.querySelectorAll(".nav__links a").forEach(function (link) {
     var href = link.getAttribute("href");
-    if (href === currentPage || (currentPage === "index.html" && href === "index.html")) {
+    if (href === currentPage) {
       link.classList.add("active");
     }
   });
 
-  /* --- Expand / Collapse Sections --- */
+  /* --- Expand / Collapse --- */
   document.querySelectorAll(".expand-trigger").forEach(function (trigger) {
     trigger.addEventListener("click", function () {
       var item = trigger.closest(".expand-item");
@@ -58,15 +58,34 @@
     });
   });
 
-  /* --- Contact Form (front-end only) --- */
+  /* --- Subtle fade-in on scroll --- */
+  var fadeEls = document.querySelectorAll(".section, .card, .contemplative-item, .arch-layer, .insight-card, .usecase-card, .principle");
+
+  if ("IntersectionObserver" in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: "0px 0px -40px 0px" });
+
+    fadeEls.forEach(function (el) {
+      el.classList.add("fade-in");
+      observer.observe(el);
+    });
+  }
+
+  /* --- Contact Form --- */
   var contactForm = document.getElementById("contact-form");
   if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
       var btn = contactForm.querySelector('button[type="submit"]');
-      btn.textContent = "Message Received";
+      btn.textContent = "Received";
       btn.disabled = true;
-      btn.style.opacity = "0.6";
+      btn.style.opacity = "0.5";
       setTimeout(function () {
         btn.textContent = "Send Message";
         btn.disabled = false;
@@ -75,4 +94,13 @@
       }, 3000);
     });
   }
+})();
+
+/* --- Fade-in CSS injected via JS to avoid FOUC on no-JS --- */
+(function () {
+  var style = document.createElement("style");
+  style.textContent =
+    ".fade-in { opacity: 0; transform: translateY(12px); transition: opacity 0.6s ease, transform 0.6s ease; }" +
+    ".fade-in.visible { opacity: 1; transform: translateY(0); }";
+  document.head.appendChild(style);
 })();

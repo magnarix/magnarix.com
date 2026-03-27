@@ -4,12 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Why MagnaRix — Strategic Decision Orchestration</title>
-  <meta name="description" content="Why decision formation needs its own system, and what category gap MagnaRix fills in the enterprise.">
+  <meta name="description" content="Why decision formation needs its own system, and what gap MagnaRix fills in the enterprise.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="container nav__inner">
       <a href="index.html" class="nav__logo">Magna<span>Rix</span></a>
@@ -28,153 +27,131 @@
     </div>
   </nav>
 
-  <!-- Page Header -->
   <header class="page-header">
     <div class="container">
       <span class="section-label">Why MagnaRix</span>
-      <h1>The Case for Decision Infrastructure</h1>
-      <p class="section-subtitle">
-        Organizations have systems for data, workflow, and execution. They rarely have a
-        system dedicated to how strategic decisions are formed, justified, approved, and
-        remembered. MagnaRix addresses that layer directly.
+      <h1>The Absent Layer</h1>
+      <p class="section-intro">
+        Organizations have systems for data, workflow, communication, and execution.
+        They rarely have a system for the activity that precedes and authorizes all of
+        these: the act of deciding.
       </p>
     </div>
   </header>
 
   <hr class="divider">
 
-  <!-- The Structural Gap -->
-  <section class="section">
+  <!-- The gap -->
+  <section class="section section--deep">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label">The Structural Gap</span>
-        <h2 class="section-title">A Missing Layer in Enterprise Systems</h2>
+      <span class="section-label">The Structural Gap</span>
+      <h2 class="section-heading">Where reasoning disappears</h2>
+      <div class="prose--large" style="margin-bottom: var(--space-xl);">
+        <p class="prose-lead">
+          Enterprises invest heavily in systems that manage data, automate workflows,
+          and track execution. The layer that precedes all of them — the layer where
+          decisions are formed, weighed, justified, and authorized — has no dedicated
+          system.
+        </p>
       </div>
-      <div class="product-section">
-        <div class="product-section__content">
-          <p>
-            Enterprises invest heavily in systems that manage data, automate workflows, and
-            track execution. These systems are well-understood and widely adopted.
-          </p>
-          <p>
-            The layer that precedes all of them — the layer where decisions are formed, weighed,
-            justified, and authorized — has no dedicated system. Decisions are recorded as
-            artifacts in other systems: a paragraph in a project charter, a line in meeting
-            minutes, a slide in a steering committee deck.
-          </p>
-          <p>
-            This fragmentation means that the reasoning, trade-offs, and risk assessments
-            behind decisions are dispersed across tools that were designed for other purposes.
-            The decision itself — as a coherent, governed record — does not exist.
-          </p>
-        </div>
-        <div class="product-visual">
-          <div class="product-visual__row">
-            <span class="product-visual__dot"></span>
-            <span class="product-visual__label">Data Systems</span>
-            <span class="product-visual__value">Established</span>
-          </div>
-          <div class="product-visual__row">
-            <span class="product-visual__dot"></span>
-            <span class="product-visual__label">Workflow Systems</span>
-            <span class="product-visual__value">Established</span>
-          </div>
-          <div class="product-visual__row">
-            <span class="product-visual__dot"></span>
-            <span class="product-visual__label">Execution Systems</span>
-            <span class="product-visual__value">Established</span>
-          </div>
-          <div class="product-visual__row">
-            <span class="product-visual__dot" style="background: #e8945a;"></span>
-            <span class="product-visual__label">Decision Systems</span>
-            <span class="product-visual__value">Gap</span>
-          </div>
-        </div>
+      <div class="prose">
+        <p>
+          Decisions are recorded as artifacts in other systems: a paragraph in a project
+          charter, a line in meeting minutes, a slide in a steering committee deck. The
+          decision itself — as a coherent, governed record — does not exist as a distinct
+          entity.
+        </p>
+        <p>
+          This fragmentation means that the reasoning, trade-offs, and risk assessments
+          behind decisions are dispersed across tools that were designed for other purposes.
+          When someone later asks why a particular direction was chosen, the answer must
+          be reconstructed — often from the memory of people who have since moved on.
+        </p>
       </div>
     </div>
   </section>
 
   <hr class="divider">
 
-  <!-- Why Existing Systems Fall Short -->
-  <section class="section">
+  <!-- Why existing tools fall short -->
+  <section class="section section--surface">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label">Existing Systems</span>
-        <h2 class="section-title">Why Current Tools Do Not Fill This Gap</h2>
-        <p class="section-subtitle">
-          Several categories of enterprise software touch aspects of decision-making. None of
-          them treat the decision as a first-class, governed object.
+      <span class="section-label">Existing Systems</span>
+      <h2 class="section-heading">Why current tools do not address this</h2>
+      <div class="prose" style="margin-bottom: var(--space-xl);">
+        <p>
+          Several categories of enterprise software touch aspects of decision-making.
+          Each serves its primary purpose well. None treats the decision as a first-class,
+          governed object.
         </p>
       </div>
       <div class="expand-group">
         <div class="expand-item">
           <button class="expand-trigger">
-            <span>Project Management Tools</span>
+            <span>Project management tools</span>
             <span class="expand-trigger__icon">+</span>
           </button>
           <div class="expand-content">
             <div class="expand-content__inner">
-              <p>Project management platforms track tasks, timelines, and deliverables. They record
-                 what needs to be done and when. They do not capture why a particular direction was
-                 chosen, what alternatives were weighed, or what risks were accepted. The decision
-                 that authorized the project exists outside the tool.</p>
+              <p>Project management platforms track tasks, timelines, and deliverables. They
+                 record what needs to be done and by when. They do not capture why a particular
+                 direction was chosen, what alternatives were weighed, or what risks were accepted.
+                 The decision that authorized the project exists outside the tool.</p>
             </div>
           </div>
         </div>
         <div class="expand-item">
           <button class="expand-trigger">
-            <span>Document Collaboration Platforms</span>
+            <span>Document collaboration</span>
             <span class="expand-trigger__icon">+</span>
           </button>
           <div class="expand-content">
             <div class="expand-content__inner">
               <p>Documents and wikis can hold any content, which is precisely the problem. A
                  decision recorded in a document has no structure, no governed state, no approval
-                 workflow, and no separation from the surrounding narrative. It cannot be queried,
+                 workflow, and no separation from surrounding narrative. It cannot be queried,
                  replayed, or audited as a distinct entity.</p>
             </div>
           </div>
         </div>
         <div class="expand-item">
           <button class="expand-trigger">
-            <span>GRC and Risk Platforms</span>
+            <span>GRC and risk platforms</span>
             <span class="expand-trigger__icon">+</span>
           </button>
           <div class="expand-content">
             <div class="expand-content__inner">
               <p>Governance, risk, and compliance platforms manage risk registers and control
                  frameworks. They address risk as a standing concern — not as a dimension of a
-                 specific decision. The risk assessment within a decision context, tied to specific
-                 alternatives and trade-offs, is not their design focus.</p>
+                 specific decision. The risk assessment within a particular decision context,
+                 tied to specific alternatives and trade-offs, is not their design focus.</p>
             </div>
           </div>
         </div>
         <div class="expand-item">
           <button class="expand-trigger">
-            <span>Business Intelligence and Analytics</span>
+            <span>Business intelligence</span>
             <span class="expand-trigger__icon">+</span>
           </button>
           <div class="expand-content">
             <div class="expand-content__inner">
-              <p>BI platforms provide data and dashboards that inform decisions. They do not capture
-                 the decision itself — the interpretation of that data, the constraints applied, the
-                 trade-offs made, or the approval granted. The gap is between insight and the
-                 structured record of the choice that followed.</p>
+              <p>BI platforms provide data and dashboards that inform decisions. They do not
+                 capture the decision itself — the interpretation of that data, the constraints
+                 applied, the trade-offs made, or the approval granted. The gap is between
+                 insight and the structured record of the choice that followed.</p>
             </div>
           </div>
         </div>
         <div class="expand-item">
           <button class="expand-trigger">
-            <span>Meeting and Communication Tools</span>
+            <span>Meeting and communication tools</span>
             <span class="expand-trigger__icon">+</span>
           </button>
           <div class="expand-content">
             <div class="expand-content__inner">
-              <p>Decisions often happen in meetings, but meeting tools capture conversation — not
-                 structured decisions. A decision buried in a transcript or a set of action items
-                 lacks the context, governance, and persistence that enterprise decision-making
-                 requires.</p>
+              <p>Decisions often happen in meetings, but meeting tools capture conversation.
+                 A decision buried in a transcript or a set of action items lacks the structure,
+                 governance, and persistence that enterprise decision-making requires.</p>
             </div>
           </div>
         </div>
@@ -184,152 +161,76 @@
 
   <hr class="divider">
 
-  <!-- Why Decision Formation Needs Its Own System -->
-  <section class="section">
+  <!-- What MagnaRix preserves -->
+  <section class="section section--deep section--glow">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label">Decision Formation</span>
-        <h2 class="section-title">Why Decisions Require Dedicated Infrastructure</h2>
-      </div>
-      <div class="value-grid">
-        <div class="value-item">
-          <h3>Decisions Are Structured Objects</h3>
-          <p>A decision has identifiable components: objectives, constraints, alternatives,
-             risks, trade-offs, and approvals. These components have relationships and dependencies
-             that unstructured tools cannot represent or govern.</p>
-        </div>
-        <div class="value-item">
-          <h3>Decisions Have Lifecycles</h3>
-          <p>A decision moves from formation to review to approval to execution. Each stage has
-             different participants, different information needs, and different governance
-             requirements. This lifecycle needs a system designed to support it.</p>
-        </div>
-        <div class="value-item">
-          <h3>Decisions Require Governance</h3>
-          <p>Enterprise decisions involve accountability — who proposed, who reviewed, who
-             approved. This governance requires structured workflows, locked states, and immutable
-             records that general-purpose tools do not provide.</p>
-        </div>
-        <div class="value-item">
-          <h3>Decisions Accumulate Into Institutional Knowledge</h3>
-          <p>Over time, an organization's decisions form a body of institutional knowledge. Without
-             a system to preserve this knowledge, it dissipates with personnel changes and the
-             passage of time.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider">
-
-  <!-- What MagnaRix Preserves -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-label">Preservation</span>
-        <h2 class="section-title">What MagnaRix Preserves</h2>
-        <p class="section-subtitle">
-          The value of a decision system lies in what it retains — the elements that other
-          systems allow to disappear.
-        </p>
-      </div>
-      <div class="card-grid card-grid--3">
-        <div class="card">
+      <span class="section-label">What Is Preserved</span>
+      <h2 class="section-heading">The elements that other systems allow to disappear</h2>
+      <div class="contemplative-list">
+        <div class="contemplative-item">
           <h3>Reasoning</h3>
-          <p>The logic, analysis, and justification behind a decision — why this path was chosen
-             over alternatives, and what evidence or judgment supported the choice.</p>
+          <p>
+            The logic, analysis, and judgment behind a decision — why this path was chosen
+            over alternatives, and what evidence or experience supported the choice.
+          </p>
         </div>
-        <div class="card">
+        <div class="contemplative-item">
           <h3>Accountability</h3>
-          <p>Clear records of who proposed, reviewed, and approved each decision — with timestamps
-             and governed states that support audit and compliance requirements.</p>
+          <p>
+            Clear records of who proposed, reviewed, and approved each decision — with
+            timestamps and governed states that support audit and compliance.
+          </p>
         </div>
-        <div class="card">
+        <div class="contemplative-item">
           <h3>Context</h3>
-          <p>The constraints, assumptions, and conditions that existed at the time of the decision —
-             essential for understanding the decision within its original environment.</p>
+          <p>
+            The constraints, assumptions, and conditions that existed at the time of the
+            decision — essential for understanding it within its original environment.
+          </p>
         </div>
-        <div class="card">
+        <div class="contemplative-item">
           <h3>Lineage</h3>
-          <p>The relationship between decisions — how earlier choices shaped later ones, and how
-             decisions connect across programs, domains, and time periods.</p>
+          <p>
+            The relationships between decisions — how earlier choices shaped later ones,
+            and how decisions connect across programs, domains, and time.
+          </p>
         </div>
-        <div class="card">
-          <h3>Institutional Learning</h3>
-          <p>The accumulated body of decisions, their outcomes, and their reasoning — forming an
-             organizational memory that supports better decision-making over time.</p>
-        </div>
-        <div class="card">
-          <h3>Intent</h3>
-          <p>The original objectives and expected outcomes of a decision — providing a reference
-             point for evaluating whether execution remained aligned with purpose.</p>
+        <div class="contemplative-item">
+          <h3>Institutional learning</h3>
+          <p>
+            The accumulated body of decisions, their outcomes, and their reasoning —
+            forming a memory that supports better decision-making across the organization
+            and across time.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <hr class="divider">
-
-  <!-- Organizational Outcomes -->
-  <section class="section">
+  <!-- Closing -->
+  <section class="closing">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label">Outcomes</span>
-        <h2 class="section-title">Organizational Impact</h2>
-        <p class="section-subtitle">
-          When decisions are structured, governed, and preserved, organizations gain
-          measurable operational benefits.
+      <div class="prose">
+        <p>
+          MagnaRix exists because decisions deserve the same structural care that
+          organizations give to the systems, data, and workflows those decisions create.
+          The act of deciding is the origin point. MagnaRix is the system that respects
+          that origin.
         </p>
       </div>
-      <div class="value-grid">
-        <div class="value-item">
-          <h3>Reduced Decision Revisitation</h3>
-          <p>When prior reasoning is accessible, teams spend less time revisiting settled decisions
-             and more time acting on them. The institutional record provides confidence to move
-             forward.</p>
-        </div>
-        <div class="value-item">
-          <h3>Stronger Governance Posture</h3>
-          <p>Structured decision records support compliance, audit readiness, and accountability
-             across the organization — without requiring retrospective documentation efforts.</p>
-        </div>
-        <div class="value-item">
-          <h3>Improved Continuity</h3>
-          <p>Personnel changes, reorganizations, and leadership transitions no longer erase
-             decision context. The institutional memory persists independently of individual
-             contributors.</p>
-        </div>
-        <div class="value-item">
-          <h3>Better-Informed Execution</h3>
-          <p>Execution teams inherit the full context of the decisions they are implementing —
-             including intent, constraints, and accepted risks — enabling more aligned and
-             accountable follow-through.</p>
-        </div>
+      <div class="closing__actions">
+        <a href="product.html" class="btn btn--primary">See the Platform</a>
+        <a href="contact.html" class="btn btn--outline">Get in Touch</a>
       </div>
     </div>
   </section>
 
-  <hr class="divider">
-
-  <!-- CTA -->
-  <section class="cta">
-    <div class="container">
-      <h2>See the Platform in Detail</h2>
-      <p>Explore the MagnaRix product architecture and capabilities.</p>
-      <div class="cta__actions">
-        <a href="product.html" class="btn btn--primary">View Product</a>
-        <a href="contact.html" class="btn btn--outline">Contact Us</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer__inner">
         <div class="footer__brand">
           <a href="index.html" class="nav__logo">Magna<span>Rix</span></a>
-          <p>An AI-powered platform for strategic decision orchestration. Structure, govern, and preserve the decisions that shape your organization.</p>
+          <p>A platform for structuring, governing, and preserving the decisions that shape organizations.</p>
         </div>
         <div>
           <h4 class="footer__heading">Platform</h4>
