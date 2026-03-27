@@ -3,20 +3,18 @@ import Link from 'next/link'
 const footerNav = {
   Product: [
     { label: 'Product Overview', href: '/product' },
-    { label: 'Decision Memory', href: '/decision-memory' },
-    { label: 'Governance & Approval', href: '/governance-approval' },
-    { label: 'Advisory Intelligence', href: '/advisory-intelligence' },
     { label: 'Platform', href: '/platform' },
-    { label: 'Use Cases', href: '/use-cases' },
   ],
-  About: [
+  Solutions: [
+    { label: 'Use Cases', href: '/use-cases' },
     { label: 'Why MagnaRix', href: '/why-magnarix' },
+  ],
+  Company: [
     { label: 'About', href: '/about' },
     { label: 'Insights', href: '/insights' },
   ],
   'Get Started': [
     { label: 'Request a Demo', href: '/contact' },
-    { label: 'Contact Us', href: '/contact' },
   ],
   Legal: [
     { label: 'Privacy Policy', href: '/privacy' },
@@ -28,7 +26,7 @@ export function Footer() {
   return (
     <footer className="bg-navy border-t border-steel/50">
       <div className="section-container py-16 lg:py-20">
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+        <div className="grid grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="col-span-2 lg:col-span-1">
             <Link
@@ -44,7 +42,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-frost text-sm leading-relaxed max-w-xs">
-              Decision orchestration for organizations that take governance seriously.
+              A system for structuring, governing, and preserving consequential decisions across time.
             </p>
           </div>
 
@@ -75,7 +73,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} MagnaRix. All rights reserved.
           </p>
           <p className="text-frost/60 text-xs">
-            Decision orchestration for the enterprise.
+            Decision memory, governance, and advisory intelligence for the enterprise.
           </p>
         </div>
       </div>
