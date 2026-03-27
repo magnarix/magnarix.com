@@ -9,7 +9,7 @@ const footerNav = {
     { label: 'Use Cases', href: '/use-cases' },
     { label: 'Why MagnaRix', href: '/why-magnarix' },
   ],
-  Company: [
+  Team: [
     { label: 'About', href: '/about' },
     { label: 'Insights', href: '/insights' },
   ],

@@ -40,7 +40,7 @@ const navigation: NavEntry[] = [
   },
   {
     kind: 'group',
-    label: 'Company',
+    label: 'Team',
     items: [
       { label: 'About', href: '/about' },
       { label: 'Contact', href: '/contact' },
