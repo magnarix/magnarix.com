@@ -12,31 +12,31 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'MagnaRix — Decision Orchestration for the Enterprise',
+    default: 'MagnaRix — Decision Memory, Governance, and Advisory Intelligence',
     template: '%s | MagnaRix',
   },
   description:
-    'MagnaRix is an AI-native decision orchestration platform that gives enterprise organizations memory, governance, and intelligent support for their most consequential decisions.',
+    'MagnaRix is a system for structuring, governing, and preserving consequential decisions — with decision memory, advisory intelligence, and continuity across time.',
   keywords: [
-    'decision orchestration',
-    'enterprise AI',
-    'institutional memory',
+    'decision memory',
     'decision governance',
-    'AI platform',
-    'decision intelligence',
+    'institutional memory',
+    'decision infrastructure',
+    'advisory intelligence',
+    'decision continuity',
   ],
   openGraph: {
     type: 'website',
     siteName: 'MagnaRix',
-    title: 'MagnaRix — Decision Orchestration for the Enterprise',
+    title: 'MagnaRix — Decision Memory, Governance, and Advisory Intelligence',
     description:
-      'Enterprise decision orchestration: memory, governance, and AI-assisted reasoning for your most consequential choices.',
+      'MagnaRix preserves the reasoning behind consequential decisions through decision memory, governance, and AI-assisted analysis.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MagnaRix — Decision Orchestration for the Enterprise',
+    title: 'MagnaRix — Decision Memory, Governance, and Advisory Intelligence',
     description:
-      'Enterprise decision orchestration: memory, governance, and AI-assisted reasoning for your most consequential choices.',
+      'MagnaRix preserves the reasoning behind consequential decisions through decision memory, governance, and AI-assisted analysis.',
   },
   robots: {
     index: true,

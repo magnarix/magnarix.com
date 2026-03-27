@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Terms of Use — MagnaRix',
-  description: 'MagnaRix Terms of Use for the MagnaRix website and online services.',
+  description: 'Terms governing use of the MagnaRix website and related online services.',
 }
 
 export default function TermsPage() {
@@ -12,14 +12,14 @@ export default function TermsPage() {
         <div className="max-w-3xl">
           <p className="label-tag mb-5">Legal</p>
           <h1 className="heading-xl mb-4">Terms of Use</h1>
-          <p className="text-frost text-sm mb-12">Last updated: March 2025</p>
+          <p className="text-frost text-sm mb-12">Last updated: March 27, 2026</p>
 
           <div className="space-y-10">
             {[
               {
                 title: '1. Acceptance of Terms',
                 content:
-                  'By accessing or using the MagnaRix website (magnarix.com) and any associated services, you agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use our website.',
+                  'By accessing or using the MagnaRix website (magnarix.com) and any related online services we make available, you agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use the website.',
               },
               {
                 title: '2. Use of the Website',
@@ -29,7 +29,7 @@ export default function TermsPage() {
               {
                 title: '3. Intellectual Property',
                 content:
-                  'All content on this website — including text, graphics, logos, product names, and software — is the property of MagnaRix or its content suppliers and is protected by applicable intellectual property laws. You may not reproduce, distribute, or create derivative works from any content on this website without our express written permission.',
+                  'All content made available on this website — including text, graphics, logos, product names, and software or software-related materials — is the property of MagnaRix or its content suppliers and is protected by applicable intellectual property laws. You may not reproduce, distribute, or create derivative works from any content on this website without our express written permission.',
               },
               {
                 title: '4. No Warranties',

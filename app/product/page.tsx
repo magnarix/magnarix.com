@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { PageHero } from '@/components/sections/PageHero'
 import { CTASection } from '@/components/sections/CTASection'
 import { FeatureGrid } from '@/components/sections/FeatureGrid'
@@ -6,9 +7,9 @@ import { Card } from '@/components/ui/Card'
 import { SectionLabel } from '@/components/ui/SectionLabel'
 
 export const metadata: Metadata = {
-  title: 'Product — Decision Canvas and Structured Decision Intelligence',
+  title: 'Product — Decision Canvas, Governance, and Decision Memory',
   description:
-    'Explore the MagnaRix product: Decision Canvas, structured rationale capture, AI-assisted reasoning, governance workflows, and complete decision traceability.',
+    'Explore MagnaRix: a system for structured decision formation, AI-assisted analysis, governance, and durable decision memory.',
 }
 
 const canvasFeatures = [
@@ -16,7 +17,7 @@ const canvasFeatures = [
     icon: '▣',
     title: 'Structured Rationale Capture',
     description:
-      'Record not just what was decided, but why — the options considered, the evidence examined, the trade-offs weighed, and the assumptions that underpinned the choice.',
+      'Record not only what was decided, but the reasoning that gave rise to it — the options considered, the evidence examined, the trade-offs weighed, and the assumptions that supported the choice.',
   },
   {
     icon: '◈',
@@ -61,7 +62,7 @@ const workflowFeatures = [
     icon: '◑',
     title: 'Review and Approval Flows',
     description:
-      'Define multi-stage review processes aligned with your governance model. Decisions route to the right people at the right time, with complete trail of who reviewed and approved.',
+      'Define multi-stage review processes aligned with your governance model. Decisions route to the right people at the right time, with a complete trail of who reviewed and approved.',
   },
   {
     icon: '◒',
@@ -77,10 +78,10 @@ export default function ProductPage() {
       <PageHero
         label="Product"
         headline="Every decision deserves a record that endures."
-        subheadline="MagnaRix structures the decisions that shape your organization — capturing the reasoning, governance, and context that turn a choice into institutional knowledge."
+        subheadline="MagnaRix structures the decisions that shape your organization — preserving the reasoning, governance, and context that allow a choice to endure as institutional knowledge."
         cta={{
           primary: { label: 'Request a Demo', href: '/contact' },
-          secondary: { label: 'Explore the Platform', href: '/platform' },
+          secondary: { label: 'View Platform Architecture', href: '/platform' },
         }}
       />
 
@@ -92,7 +93,7 @@ export default function ProductPage() {
               <SectionLabel className="mb-5 block">Core Capability</SectionLabel>
               <h2 className="heading-lg mb-6">The Decision Canvas</h2>
               <p className="body-lg text-frost mb-5">
-                The Decision Canvas is the foundational unit of MagnaRix. It is a structured
+                The Decision Canvas is the foundational form of MagnaRix. It is a structured
                 record designed to capture a consequential decision in full — not as a
                 summary or a title, but as a complete artifact of organizational reasoning.
               </p>
@@ -161,16 +162,16 @@ export default function ProductPage() {
             <div>
               <SectionLabel className="mb-5 block">AI Assistance</SectionLabel>
               <h2 className="heading-lg mb-6">
-                Intelligent support that extends judgment, not replaces it.
+                AI assistance that works within judgment, not outside it.
               </h2>
               <p className="body-lg text-frost mb-5">
                 MagnaRix integrates AI assistance into the decision process in a way that
-                is designed to support disciplined reasoning, not generate false confidence
-                or replace the human judgment that complex decisions require.
+                supports disciplined reasoning without displacing the human judgment that
+                complex decisions require.
               </p>
               <p className="body-lg text-frost mb-5">
                 AI surfaces relevant prior decisions, identifies comparable situations
-                in the decision record, challenges assumptions with contextual reasoning,
+                in the decision record, tests assumptions against contextual patterns,
                 suggests dimensions of the decision that may have been overlooked, and
                 supports structured analysis of trade-offs.
               </p>
@@ -178,6 +179,8 @@ export default function ProductPage() {
                 Every AI contribution to a decision record is marked, versioned, and
                 traceable. The reasoning chain from human intent to AI output to final
                 decision remains fully visible and auditable.
+                This dimension of the system is described more fully in{' '}
+                <Link href="/advisory-intelligence" className="text-accent hover:text-accent-light transition-colors">Advisory Intelligence</Link>.
               </p>
             </div>
 
@@ -193,7 +196,7 @@ export default function ProductPage() {
                 },
                 {
                   title: 'Option generation',
-                  description: 'Propose alternatives that may not have been considered, with structured prompts that help decision authors evaluate their completeness.',
+                  description: 'Propose alternatives that may not have been considered, with structured prompts that help decision authors evaluate them with greater completeness.',
                 },
                 {
                   title: 'Trade-off articulation',
@@ -227,12 +230,14 @@ export default function ProductPage() {
           <div className="text-center max-w-2xl mx-auto mb-14">
             <SectionLabel className="mb-4 block">Decision Workflow</SectionLabel>
             <h2 className="heading-lg mb-5">
-              Governance built into the process, not bolted on afterward.
+              Governance present within the process from the beginning.
             </h2>
             <p className="body-lg text-frost">
               MagnaRix structures the decision workflow from initiation through approval
-              and into the decision record. Governance is not a separate compliance layer
-              — it is how decisions move through the organization.
+              and into the decision record. Governance remains present throughout the
+              movement of the decision as part of its formation, review, and authorization.
+              The governance dimension of this process is described more fully in{' '}
+              <Link href="/governance-approval" className="text-accent hover:text-accent-light transition-colors">Governance &amp; Approval</Link>.
             </p>
           </div>
           <FeatureGrid features={workflowFeatures} columns={3} />
@@ -240,8 +245,8 @@ export default function ProductPage() {
       </section>
 
       <CTASection
-        headline="See the Decision Canvas in action."
-        body="We can walk you through how MagnaRix would work for the specific kinds of decisions your organization makes most frequently."
+        headline="See how the Decision Canvas takes form in practice."
+        body="We can walk you through how MagnaRix would support the kinds of decisions your organization makes most frequently."
         secondaryLabel="View Platform Architecture"
         secondaryHref="/platform"
       />

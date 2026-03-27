@@ -16,7 +16,7 @@ const capabilities = [
     icon: '◈',
     title: 'Decision Canvas',
     description:
-      'A structured environment for recording decisions in context — including the question asked, the options considered, the rationale behind the choice, the evidence examined, and the assumptions that shaped it.',
+      'A structured environment in which decisions take form in context — including the question asked, the options considered, the rationale behind the choice, the evidence examined, and the assumptions that shaped it.',
   },
   {
     icon: '⊡',
@@ -28,13 +28,13 @@ const capabilities = [
     icon: '◎',
     title: 'Governance Layer',
     description:
-      'Authority structures, approval workflows, and accountability chains are embedded in the platform — not retrofitted after the fact.',
+      'Authority structures, approval workflows, and accountability chains are embedded within the system as part of the decision itself.',
   },
   {
     icon: '◐',
     title: 'AI-Assisted Reasoning',
     description:
-      'MagnaRix brings AI into the decision process not to replace judgment, but to surface relevant context, challenge assumptions, and support clearer thinking.',
+      'MagnaRix includes AI within the decision process, working alongside judgment, to surface relevant context, challenge assumptions, and support clearer thinking.',
   },
   {
     icon: '◉',
@@ -46,7 +46,7 @@ const capabilities = [
     icon: '◫',
     title: 'Scenario Exploration',
     description:
-      'Model alternative paths before committing. Revisit decisions as conditions change. Challenge past reasoning with new information.',
+      'Explore alternative paths before commitment. Revisit decisions as conditions change, allowing earlier reasoning to be seen in light of new information.',
   },
 ]
 
@@ -93,9 +93,9 @@ export default function HomePage() {
             </h1>
 
             <p className="text-xl text-frost leading-relaxed max-w-2xl mb-10">
-              MagnaRix is an AI-native decision orchestration platform that gives enterprise
-              organizations the memory, governance, and intelligent support their most
-              important decisions deserve.
+              MagnaRix takes form within this condition. It is a system in which decisions are
+              formed, examined, and preserved — together with their assumptions, constraints,
+              risks, and approvals.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -103,7 +103,7 @@ export default function HomePage() {
                 Request a Demo
               </Button>
               <Button href="/product" variant="secondary" size="lg">
-                Explore the Platform
+                View Platform Architecture
               </Button>
             </div>
           </div>
@@ -147,12 +147,12 @@ export default function HomePage() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <SectionLabel className="mb-5 block">What MagnaRix Is</SectionLabel>
             <h2 className="heading-lg mb-5">
-              A platform built around the decision, not around the document.
+              A system in which the decision itself becomes the primary object.
             </h2>
             <p className="body-lg text-frost">
               MagnaRix structures the decision itself — its context, options, rationale,
-              evidence, assumptions, authority, and consequences — and gives organizations
-              an intelligent environment for understanding and governing it over time.
+              evidence, assumptions, authority, and consequences — within an environment
+              where it can be understood and governed over time.
             </p>
           </div>
 
@@ -169,7 +169,7 @@ export default function HomePage() {
               <h2 className="heading-lg mb-6">The Decision Canvas</h2>
               <p className="body-lg text-frost mb-6">
                 At the core of MagnaRix is the Decision Canvas — a structured space that
-                captures not just what was decided, but what was considered, what was
+                captures not only what was decided, but what was considered, what was
                 assumed, what evidence was examined, and what alternatives were evaluated.
               </p>
               <p className="body-lg text-frost mb-8">
@@ -257,7 +257,7 @@ export default function HomePage() {
             <div>
               <SectionLabel className="mb-5 block">Enterprise Value</SectionLabel>
               <h2 className="heading-lg mb-6">
-                What changes when decisions have an operational memory
+                What becomes possible when decisions persist as operational memory
               </h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -291,8 +291,8 @@ export default function HomePage() {
       </section>
 
       <CTASection
-        headline="Ready to give your decisions the structure they deserve?"
-        body="Connect with us to explore how MagnaRix can address your organization's specific decision governance challenges."
+        headline="When decisions persist, the organization no longer needs to reconstruct them."
+        body="We can walk through how MagnaRix would take form within the decisions your organization already makes."
         secondaryLabel="Learn About the Platform"
         secondaryHref="/platform"
       />

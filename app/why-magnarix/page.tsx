@@ -1,25 +1,26 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { PageHero } from '@/components/sections/PageHero'
 import { CTASection } from '@/components/sections/CTASection'
 import { Card } from '@/components/ui/Card'
 import { SectionLabel } from '@/components/ui/SectionLabel'
 
 export const metadata: Metadata = {
-  title: 'Why MagnaRix — The Case for Decision Orchestration',
+  title: 'Why MagnaRix — MagnaRix',
   description:
-    'Why enterprise decision governance fails, why existing tools are insufficient, and why the combination of memory, authority, and AI reasoning changes the picture.',
+    'Why consequential decisions are poorly preserved, why existing tools leave the condition unresolved, and why decision memory, governance, and advisory intelligence belong together.',
 }
 
 export default function WhyMagnarixPage() {
   return (
     <>
       <PageHero
-        label="The Case for MagnaRix"
-        headline="Organizations do not lack the ability to decide. They lack the infrastructure to govern decisions well."
-        subheadline="MagnaRix exists because the tools organizations use to make decisions were not designed to preserve, govern, or learn from them."
+        label="Why MagnaRix"
+        headline="Organizations make decisions every day. What is often missing is the infrastructure that allows those decisions to remain governed across time."
+        subheadline="MagnaRix takes form within a condition in which the tools organizations rely on were never designed to preserve, govern, or learn from consequential decisions as decisions."
         cta={{
-          primary: { label: 'Request a Demo', href: '/contact' },
-          secondary: { label: 'See the Product', href: '/product' },
+          primary: { label: 'Begin a Conversation', href: '/contact' },
+          secondary: { label: 'View the Product', href: '/product' },
         }}
       />
 
@@ -58,7 +59,7 @@ export default function WhyMagnarixPage() {
                 },
                 {
                   headline: 'Governance is applied retrospectively',
-                  body: 'Without a structured decision record, governance bodies review outcomes rather than processes. This produces accountability that is punitive rather than preventive — and misses the decisions that create exposure before they become visible.',
+                  body: 'Without a structured decision record, governance bodies are left reviewing outcomes after the fact. Accountability becomes reactive, and the decisions that create exposure often remain invisible until their effects are already present.',
                 },
                 {
                   headline: 'Audit trails are constructed, not maintained',
@@ -88,8 +89,8 @@ export default function WhyMagnarixPage() {
               Why existing tools are structurally insufficient
             </h2>
             <p className="body-lg text-frost">
-              Organizations use many tools that touch on decisions — but none of them
-              were designed to govern them. Each addresses a fragment of the problem
+              Organizations use many tools that touch on decisions, yet the decision itself
+              rarely remains their primary object. Each addresses a fragment of the problem
               while leaving the most important gap open.
             </p>
           </div>
@@ -144,14 +145,14 @@ export default function WhyMagnarixPage() {
         <div className="section-container">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
-              <SectionLabel className="mb-5 block">The MagnaRix Difference</SectionLabel>
+              <SectionLabel className="mb-5 block">A Distinct Capability</SectionLabel>
               <h2 className="heading-lg mb-6">
-                Memory plus authority plus AI reasoning is a meaningful combination.
+                Decision memory, governance, and advisory intelligence belong together.
               </h2>
               <p className="body-lg text-frost mb-5">
-                MagnaRix is not differentiated by any single feature. It is differentiated
-                by the combination of three properties that, together, constitute a
-                genuinely different capability:
+                What takes shape in MagnaRix is not a single feature or isolated function,
+                but the convergence of three properties that together form a distinct
+                organizational capability:
               </p>
               <div className="space-y-6 mt-8">
                 {[
@@ -161,14 +162,14 @@ export default function WhyMagnarixPage() {
                       'A structured, durable, governed record of decisions that persists beyond the individuals who made them and is accessible in controlled ways across the organization.',
                   },
                   {
-                    term: 'Authority',
+                    term: 'Governance',
                     definition:
-                      'An embedded governance model that makes decision rights, approval structures, and accountability chains explicit — without requiring a separate governance layer.',
+                      'An embedded governance model that makes decision rights, approval structures, and accountability chains explicit within the decision itself.',
                   },
                   {
-                    term: 'AI Reasoning',
+                    term: <Link href="/advisory-intelligence" className="text-white hover:text-accent transition-colors">Advisory Intelligence</Link>,
                     definition:
-                      'Intelligent assistance that operates within the governed decision process — surfacing context, challenging assumptions, supporting analysis — with full attribution and traceability.',
+                      'AI-assisted analysis that operates within the governed decision process — surfacing context, challenging assumptions, and supporting analysis with attribution and traceability.',
                   },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-5">
@@ -184,7 +185,7 @@ export default function WhyMagnarixPage() {
 
             <div className="space-y-5">
               <div className="bg-slate-deep border border-steel rounded-2xl p-7">
-                <h3 className="heading-sm mb-4">What organizations tell us they need</h3>
+                <h3 className="heading-sm mb-4">What this condition repeatedly makes visible</h3>
                 <ul className="space-y-3">
                   {[
                     'A record of why we made this decision, not just that we made it',
@@ -213,10 +214,10 @@ export default function WhyMagnarixPage() {
                       A note on category definition
                     </h3>
                     <p className="text-frost text-sm leading-relaxed">
-                      We believe decision orchestration represents an enterprise software
-                      category that has not been served directly — not as a feature of
-                      an existing platform, but as a dedicated capability. MagnaRix is
-                      building that category with the discipline it requires.
+                      Decision orchestration names a capability that has rarely been treated
+                      directly in enterprise systems. It has often been dispersed across
+                      documents, workflows, governance forums, and informal memory. MagnaRix
+                      takes shape where that capability is gathered into a more coherent form.
                     </p>
                   </div>
                 </div>
@@ -227,8 +228,8 @@ export default function WhyMagnarixPage() {
       </section>
 
       <CTASection
-        headline="Start the conversation."
-        body="We engage in depth with organizations that are serious about decision governance. Tell us about your specific challenges."
+        headline="Conversations around this work are welcome."
+        body="If these conditions belong to your organization's experience, we would welcome the opportunity to think with you about them."
         secondaryLabel="View Use Cases"
         secondaryHref="/use-cases"
       />

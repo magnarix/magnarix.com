@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy — MagnaRix',
-  description: 'MagnaRix Privacy Policy — how we collect, use, and protect your information.',
+  description: 'MagnaRix Privacy Policy — what information we collect, how we use it, and the choices available to you.',
 }
 
 export default function PrivacyPage() {
@@ -12,7 +12,7 @@ export default function PrivacyPage() {
         <div className="max-w-3xl">
           <p className="label-tag mb-5">Legal</p>
           <h1 className="heading-xl mb-4">Privacy Policy</h1>
-          <p className="text-frost text-sm mb-12">Last updated: March 2025</p>
+          <p className="text-frost text-sm mb-12">Last updated: March 27, 2026</p>
 
           <div className="space-y-10">
             {[
@@ -24,22 +24,22 @@ export default function PrivacyPage() {
               {
                 title: '2. Information We Collect',
                 content:
-                  'We collect information you provide directly to us, including when you submit a contact or demo request form. This may include your name, work email address, company name, job title, and the content of your message. We also collect standard technical information through web server logs and analytics tools, including IP address, browser type, pages visited, and referring URLs.',
+                  'We collect information you provide directly to us, including when you submit a contact form or other direct inquiry. This may include your name, work email address, company name, job title, and the content of your message. We may also collect standard technical information through web server logs and limited analytics tools, including IP address, browser type, pages visited, and referring URLs.',
               },
               {
                 title: '3. How We Use Your Information',
                 content:
-                  'We use the information you provide to respond to your inquiries, schedule demonstrations, and communicate with you about our products and services. Technical information is used to improve the performance and usability of our website and to understand aggregate usage patterns. We do not use your information to build advertising profiles or sell it to third parties.',
+                  'We use the information you provide to respond to your inquiries, continue relevant conversations you initiate, and provide information related to MagnaRix where appropriate. Technical information is used to improve the performance, security, and usability of our website and to understand aggregate usage patterns. We do not use your information to build advertising profiles or sell it to third parties.',
               },
               {
                 title: '4. Information Sharing',
                 content:
-                  'We do not sell, trade, or otherwise transfer your personal information to third parties except as described in this policy. We may share information with service providers who assist us in operating our website and conducting our business, subject to appropriate confidentiality obligations. We may disclose information where required by law or to protect the rights and safety of MagnaRix and its users.',
+                  'We do not sell, trade, or otherwise transfer your personal information to third parties except as described in this policy. We may share information with service providers who assist us in operating our website, maintaining communications, and supporting related business operations, subject to appropriate confidentiality obligations. We may also disclose information where required by law or where reasonably necessary to protect the rights, safety, and security of MagnaRix and its users.',
               },
               {
                 title: '5. Data Retention',
                 content:
-                  'We retain the information you provide for as long as necessary to address your inquiry and maintain our business relationship, or as required by applicable law. You may request deletion of your personal information by contacting us at the address below.',
+                  'We retain personal information only for as long as reasonably necessary for the purposes described in this policy, including responding to your inquiry, maintaining relevant business records, and complying with applicable law. You may request deletion of your personal information by contacting us at the address below, subject to any legal obligations that require retention.',
               },
               {
                 title: '6. Security',
@@ -49,7 +49,7 @@ export default function PrivacyPage() {
               {
                 title: '7. Cookies and Analytics',
                 content:
-                  'Our website may use cookies and similar tracking technologies to support website functionality and analytics. You may control cookie settings through your browser. We aim to use only the analytics capabilities necessary to understand how our website is used in aggregate.',
+                  'Our website may use limited cookies or similar technologies necessary for site functionality and basic analytics. You may control cookie settings through your browser. If analytics are enabled, they are used to understand aggregate website usage rather than to build advertising profiles.',
               },
               {
                 title: '8. Your Rights',

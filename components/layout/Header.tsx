@@ -6,6 +6,9 @@ import { usePathname } from 'next/navigation'
 
 const navLinks = [
   { label: 'Product', href: '/product' },
+  { label: 'Decision Memory', href: '/decision-memory' },
+  { label: 'Governance & Approval', href: '/governance-approval' },
+  { label: 'Advisory Intelligence', href: '/advisory-intelligence' },
   { label: 'Platform', href: '/platform' },
   { label: 'Use Cases', href: '/use-cases' },
   { label: 'Why MagnaRix', href: '/why-magnarix' },
@@ -85,7 +88,7 @@ export function Header() {
               href="/contact"
               className="btn-primary text-sm px-4 py-2"
             >
-              Request a Demo
+              Begin a Conversation
             </Link>
           </div>
 
@@ -139,7 +142,7 @@ export function Header() {
                 href="/contact"
                 className="block w-full text-center bg-accent hover:bg-accent-light text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors"
               >
-                Request a Demo
+                Begin a Conversation
               </Link>
             </div>
           </nav>

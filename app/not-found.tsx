@@ -10,11 +10,11 @@ export default function NotFound() {
           </div>
           <h1 className="heading-lg mb-4">Page not found</h1>
           <p className="body-lg text-frost mb-10">
-            The page you are looking for does not exist or has been moved.
+            The page you are looking for is not available, or the path no longer leads to it.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button href="/">Return Home</Button>
-            <Button href="/contact" variant="secondary">Contact Us</Button>
+            <Button href="/">Return to Home</Button>
+            <Button href="/contact" variant="secondary">Contact</Button>
           </div>
         </div>
       </div>

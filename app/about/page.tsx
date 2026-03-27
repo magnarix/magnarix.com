@@ -6,7 +6,7 @@ import { SectionLabel } from '@/components/ui/SectionLabel'
 export const metadata: Metadata = {
   title: 'About — MagnaRix',
   description:
-    'MagnaRix is building the decision orchestration platform for the enterprise. Our mission, philosophy, and the vision that guides our work.',
+    'MagnaRix takes form within a condition long present in enterprise systems: the absence of a structured approach to consequential decisions.',
 }
 
 export default function AboutPage() {
@@ -14,8 +14,8 @@ export default function AboutPage() {
     <>
       <PageHero
         label="About"
-        headline="We are building the infrastructure for better organizational judgment."
-        subheadline="MagnaRix was founded on the conviction that enterprise organizations deserve a serious, purpose-built platform for governing the decisions that shape them."
+        headline="Why MagnaRix exists"
+        subheadline="MagnaRix takes form within a condition long present in enterprise organizations: decisions with lasting consequences are made every day, yet the reasoning that formed them rarely remains intact."
       />
 
       {/* Mission */}
@@ -24,7 +24,7 @@ export default function AboutPage() {
           <div className="max-w-3xl">
             <SectionLabel className="mb-5 block">Mission</SectionLabel>
             <h2 className="heading-lg mb-8">
-              To give consequential decisions the memory, governance, and intelligence they deserve.
+              Consequential decisions require structure, governance, and persistence.
             </h2>
             <p className="body-lg text-frost mb-6">
               Every organization we have worked with faces the same underlying problem:
@@ -34,16 +34,16 @@ export default function AboutPage() {
               to the governance, learning, and oversight functions that depend on them.
             </p>
             <p className="body-lg text-frost mb-6">
-              MagnaRix was built to change that. Not with a document management layer,
-              not with a reporting dashboard, and not with a general-purpose AI assistant —
-              but with a platform designed from first principles around the specific structure
-              and governance requirements of consequential organizational decisions.
+              MagnaRix takes form within this condition. It is a system designed around the
+              specific structure and governance requirements of consequential organizational
+              decisions — not as documents, dashboards, or disconnected fragments, but as
+              durable objects of institutional reasoning.
             </p>
             <p className="body-lg text-frost">
-              We think this is important work. The quality of organizational decision-making
-              is closely correlated with the quality of institutional memory, the clarity of
-              governance, and the discipline with which reasoning is preserved and examined.
-              MagnaRix is designed to raise each of these.
+              The quality of organizational decision-making is bound to the quality of
+              institutional memory, the clarity of governance, and the discipline with which
+              reasoning is preserved and examined. MagnaRix is designed in view of that
+              relationship.
             </p>
           </div>
         </div>
@@ -56,7 +56,7 @@ export default function AboutPage() {
             <div>
               <SectionLabel className="mb-5 block">Long-Term Vision</SectionLabel>
               <h2 className="heading-lg mb-6">
-                A future where organizational memory is an asset that compounds.
+                When organizational memory becomes a durable asset.
               </h2>
               <p className="body-lg text-frost mb-5">
                 The longer-term vision behind MagnaRix is a world in which the decision
@@ -73,8 +73,8 @@ export default function AboutPage() {
                 consistently. It can train incoming leaders faster and more effectively.
               </p>
               <p className="body-lg text-frost">
-                MagnaRix is building toward that future with the discipline and seriousness
-                that enterprise organizations require of the platforms they depend on.
+                MagnaRix is taking shape in view of that future, with the discipline and
+                seriousness required wherever decisions carry lasting consequence.
               </p>
             </div>
 
@@ -83,12 +83,12 @@ export default function AboutPage() {
                 {
                   principle: 'Substance over appearance',
                   description:
-                    "We build capabilities that address real problems deeply rather than surface-level problems broadly. The value of MagnaRix comes from what it actually does for an organization's decision governance, not from how many features it can list.",
+                    "We build in response to problems that are structural, not superficial. The value of MagnaRix lies in whether decision reasoning can truly remain visible, governed, and durable across time.",
                 },
                 {
-                  principle: 'Governance as design, not constraint',
+                  principle: 'Governance as part of design',
                   description:
-                    'We believe governance belongs in the architecture of how decisions are made, not in a compliance layer applied afterward. Every design choice in MagnaRix reflects this conviction.',
+                    'Governance belongs in the architecture of how decisions are made. Every design choice in MagnaRix reflects the need for review, authorization, accountability, and continuity to remain present from the beginning.',
                 },
                 {
                   principle: 'AI in its proper role',
@@ -96,9 +96,9 @@ export default function AboutPage() {
                     'We are committed to AI that genuinely supports human judgment and is fully transparent about its contributions. We do not build toward AI that obscures how conclusions were reached.',
                 },
                 {
-                  principle: 'Enterprise rigor without enterprise complexity',
+                  principle: 'Enterprise rigor with usable form',
                   description:
-                    'The organizations MagnaRix serves have complex needs. Our platform is designed to meet those needs without creating unnecessary operational burden or requiring implementation projects of unreasonable scope.',
+                    'The organizations MagnaRix serves have complex needs. MagnaRix is designed to meet those needs in a form that remains usable, disciplined, and proportionate to the work it supports.',
                 },
               ].map((item, i) => (
                 <div
@@ -120,7 +120,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto">
             <SectionLabel className="mb-5 block text-center">Why MagnaRix Exists</SectionLabel>
             <h2 className="heading-lg mb-8 text-center">
-              The problem we are solving has always existed. The conditions to solve it properly are now present.
+              The problem has long existed. The conditions for addressing it have become more visible.
             </h2>
             <div className="space-y-5">
               <p className="body-lg text-frost">
@@ -134,14 +134,13 @@ export default function AboutPage() {
                 no longer acceptable to treat it as unavoidable.
               </p>
               <p className="body-lg text-frost">
-                MagnaRix was founded by people who have spent careers working at the
-                intersection of enterprise strategy, technology governance, and organizational
-                design — and who recognized that no platform existed that addressed the
-                decision governance problem with appropriate depth and seriousness.
+                MagnaRix emerges from long experience at the intersection of enterprise
+                strategy, technology governance, and organizational design, where the absence
+                of a serious system for decision continuity becomes difficult to ignore.
               </p>
               <p className="body-lg text-frost">
-                We are building that platform with the intention of making it one of the
-                most trusted and consequential enterprise software products of the next decade.
+                Its purpose is to give consequential decisions a form in which they can remain
+                visible, governed, and intelligible across time.
               </p>
             </div>
           </div>
@@ -149,11 +148,11 @@ export default function AboutPage() {
       </section>
 
       <CTASection
-        headline="We welcome conversations with organizations that take governance seriously."
-        body="If the problems we are describing resonate with your experience, we would like to speak with you."
+        headline="Conversations around this work are welcome."
+        body="If these conditions belong to your organization's experience, we would welcome the opportunity to think with you about them."
         primaryLabel="Get in Touch"
         primaryHref="/contact"
-        secondaryLabel="Explore the Platform"
+        secondaryLabel="View Platform Architecture"
         secondaryHref="/platform"
       />
     </>

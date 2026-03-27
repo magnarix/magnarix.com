@@ -3,6 +3,9 @@ import Link from 'next/link'
 const footerNav = {
   Product: [
     { label: 'Product Overview', href: '/product' },
+    { label: 'Decision Memory', href: '/decision-memory' },
+    { label: 'Governance & Approval', href: '/governance-approval' },
+    { label: 'Advisory Intelligence', href: '/advisory-intelligence' },
     { label: 'Platform', href: '/platform' },
     { label: 'Use Cases', href: '/use-cases' },
   ],

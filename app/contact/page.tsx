@@ -3,9 +3,9 @@ import { ContactForm } from '@/components/sections/ContactForm'
 import { SectionLabel } from '@/components/ui/SectionLabel'
 
 export const metadata: Metadata = {
-  title: 'Contact — Request a Demo or Conversation',
+  title: 'Contact — MagnaRix',
   description:
-    'Request a demo or start a conversation with the MagnaRix team about decision governance for your enterprise.',
+    'Begin a conversation about decision infrastructure, governance, and the conditions under which consequential decisions must remain visible across time.',
 }
 
 export default function ContactPage() {
@@ -17,15 +17,15 @@ export default function ContactPage() {
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left */}
           <div className="lg:sticky lg:top-28">
-            <SectionLabel className="mb-5 block">Get in Touch</SectionLabel>
+            <SectionLabel className="mb-5 block">Contact</SectionLabel>
             <h1 className="heading-xl mb-6">
-              Let&apos;s discuss your decision governance challenges.
+              Conversations around this work are welcome.
             </h1>
             <p className="body-lg text-frost mb-8">
-              We engage in depth with enterprise organizations that are evaluating
-              MagnaRix. Whether you are exploring a specific use case, conducting a
-              technical evaluation, or simply looking to understand what decision
-              orchestration means in practice — we welcome the conversation.
+              If the conditions described throughout this site belong to your
+              organization&apos;s experience, we would welcome the opportunity to think
+              with you about them. Whether the conversation is practical, strategic,
+              or architectural, it can begin here.
             </p>
 
             <div className="space-y-6 mb-10">
@@ -33,17 +33,17 @@ export default function ContactPage() {
                 {
                   label: 'What to expect',
                   description:
-                    'We will follow up within one business day to schedule an initial conversation. We do not route demo requests through automated sequences.',
+                    'We will follow up within one business day to begin the conversation. Messages are read and answered directly, not routed through automated sequences.',
                 },
                 {
                   label: 'Who you will speak with',
                   description:
-                    'Initial conversations are conducted by people with direct product and enterprise context — not by sales development representatives following a script.',
+                    'Initial conversations are handled by people with direct product and enterprise context, so the discussion can begin at the level of the work itself.',
                 },
                 {
                   label: 'What we ask of you',
                   description:
-                    'Enough context to make the conversation useful — the nature of your organization, the decision domain you are focused on, and what you are hoping to understand.',
+                    'Enough context to make the conversation useful — the nature of your organization, the decision domain in view, and what you are hoping to understand.',
                 },
               ].map((item, i) => (
                 <div key={i} className="flex gap-4">

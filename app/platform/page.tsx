@@ -1,20 +1,21 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { PageHero } from '@/components/sections/PageHero'
 import { CTASection } from '@/components/sections/CTASection'
 import { SectionLabel } from '@/components/ui/SectionLabel'
 
 export const metadata: Metadata = {
-  title: 'Platform — Enterprise Architecture for Decision Intelligence',
+  title: 'Platform Architecture — MagnaRix',
   description:
-    'The MagnaRix platform: memory layer, governance architecture, AI cognition layer, traceability, integration posture, and enterprise security design.',
+    'The architecture of MagnaRix: decision memory, governance, advisory intelligence, traceability, integration, and enterprise discipline.',
 }
 
 const layers = [
   {
     id: '01',
-    name: 'Memory Layer',
+    name: 'Decision Memory Layer',
     description:
-      'The foundation of MagnaRix is a structured, durable, and queryable decision record. This layer preserves the full content of every decision canvas — including its history, versions, contributors, and lifecycle state — and makes it accessible across the organization in controlled, governed ways.',
+      'At the foundation of MagnaRix is a structured, durable, and queryable decision record. This layer preserves the full content of every decision canvas — including its history, versions, contributors, and lifecycle state — and makes it accessible across the organization in controlled, governed ways.',
     capabilities: [
       'Versioned decision records with full history',
       'Searchable by context, topic, domain, contributor, and date',
@@ -24,7 +25,7 @@ const layers = [
   },
   {
     id: '02',
-    name: 'Authority and Governance Layer',
+    name: 'Governance & Approval Layer',
     description:
       'MagnaRix models the governance structures of the organization within the platform. This includes decision rights, approval authorities, escalation paths, and the organizational hierarchy that determines who can make, review, approve, and access decisions.',
     capabilities: [
@@ -36,9 +37,9 @@ const layers = [
   },
   {
     id: '03',
-    name: 'Cognition and AI Layer',
+    name: 'Advisory Intelligence Layer',
     description:
-      'The AI capabilities of MagnaRix are embedded in the decision process, not appended to it. This layer provides intelligent assistance for decision authoring, assumption challenging, option analysis, rationale structuring, and contextual retrieval from the decision record.',
+      'The AI capabilities of MagnaRix operate within the decision process itself. This layer provides intelligent assistance for decision authoring, assumption challenging, option analysis, rationale structuring, and contextual retrieval from the decision record.',
     capabilities: [
       'Context-aware retrieval from the decision record',
       'Assumption identification and challenge',
@@ -48,9 +49,9 @@ const layers = [
   },
   {
     id: '04',
-    name: 'Traceability and Audit Layer',
+    name: 'Traceability & Audit Layer',
     description:
-      'Every interaction with MagnaRix generates a traceable record. This layer provides the complete audit infrastructure needed for regulatory compliance, internal governance, and organizational accountability — by design, not by retrofit.',
+      'Every interaction with MagnaRix generates a traceable record. This layer provides the audit infrastructure needed for regulatory compliance, internal governance, and organizational accountability as part of the platform\'s structure.',
     capabilities: [
       'Immutable audit logs for all decision interactions',
       'Full reconstruction of decision state at any point in time',
@@ -62,7 +63,7 @@ const layers = [
     id: '05',
     name: 'Integration Layer',
     description:
-      'MagnaRix is designed to operate alongside the enterprise systems that organizations already use. The integration layer connects the decision record to external platforms, enabling MagnaRix to function as the decision intelligence layer in a broader enterprise architecture.',
+      'MagnaRix is designed to operate alongside the enterprise systems that organizations already use. The integration layer connects the decision record to external platforms, allowing MagnaRix to remain present wherever consequential work already takes place.',
     capabilities: [
       'API-first architecture for enterprise integration',
       'Connectors for enterprise content and collaboration platforms',
@@ -77,11 +78,11 @@ export default function PlatformPage() {
     <>
       <PageHero
         label="Platform Architecture"
-        headline="An enterprise platform built around the discipline of decision governance."
-        subheadline="MagnaRix is architected as a layered enterprise platform — with memory, governance, AI cognition, traceability, and integration as distinct, coherent layers that together support decision intelligence at organizational scale."
+        headline="An architecture in which consequential decisions can remain visible across time."
+        subheadline="MagnaRix is structured as a layered system — with decision memory, governance, advisory intelligence, traceability, and integration as distinct yet coherent dimensions of the same work: preserving the reasoning behind consequential decisions."
         cta={{
           primary: { label: 'Request a Demo', href: '/contact' },
-          secondary: { label: 'See the Product', href: '/product' },
+          secondary: { label: 'View the Product', href: '/product' },
         }}
       />
 
@@ -91,12 +92,12 @@ export default function PlatformPage() {
           <div className="text-center max-w-2xl mx-auto mb-16">
             <SectionLabel className="mb-4 block">Platform Layers</SectionLabel>
             <h2 className="heading-lg mb-5">
-              Five coherent layers. One decision intelligence platform.
+              Five coherent layers within a single decision architecture.
             </h2>
             <p className="body-lg text-frost">
-              Each layer of MagnaRix addresses a distinct dimension of the enterprise
-              decision challenge — and together they form an integrated platform that
-              can be deployed, governed, and evolved as organizational requirements mature.
+              Each layer of MagnaRix preserves a distinct dimension of consequential
+              decision-making. Together, they form an integrated architecture in which
+              reasoning, governance, continuity, and accountability can remain intact over time.
             </p>
           </div>
 
@@ -113,6 +114,18 @@ export default function PlatformPage() {
                       <h3 className="heading-md">{layer.name}</h3>
                     </div>
                     <p className="body-base text-frost">{layer.description}</p>
+                    {layer.id === '03' && (
+                      <p className="body-base text-frost mt-4">
+                        A fuller account of this analytical dimension is described in{' '}
+                        <Link href="/advisory-intelligence" className="text-accent hover:text-accent-light transition-colors">Advisory Intelligence</Link>.
+                      </p>
+                    )}
+                    {layer.id === '02' && (
+                      <p className="body-base text-frost mt-4">
+                        A fuller account of this authority structure is described in{' '}
+                        <Link href="/governance-approval" className="text-accent hover:text-accent-light transition-colors">Governance &amp; Approval</Link>.
+                      </p>
+                    )}
                   </div>
                   <div>
                     <h4 className="text-frost text-xs font-semibold uppercase tracking-widest mb-4">
@@ -141,17 +154,17 @@ export default function PlatformPage() {
             <div>
               <SectionLabel className="mb-5 block">Enterprise Readiness</SectionLabel>
               <h2 className="heading-lg mb-6">
-                Built to operate in demanding enterprise environments.
+                Structured for organizations that require discipline, security, and control.
               </h2>
               <p className="body-lg text-frost mb-5">
-                MagnaRix is designed from the ground up for organizations that take
-                data governance, operational security, and platform reliability seriously.
-                Enterprise readiness is a design orientation, not a feature checklist.
+                MagnaRix is designed for organizations where data governance, operational
+                security, and platform reliability cannot remain secondary considerations.
+                These concerns are part of the architecture from the beginning.
               </p>
               <p className="body-lg text-frost">
-                We engage with enterprise security and architecture teams as part of
-                the deployment process, and the platform is structured to support the
-                due diligence that serious enterprise organizations require.
+                The platform is structured to support the due diligence required by
+                enterprise security and architecture teams, including the operational
+                and governance questions that accompany serious evaluation.
               </p>
             </div>
 
@@ -180,13 +193,12 @@ export default function PlatformPage() {
           <div className="max-w-3xl mx-auto text-center">
             <SectionLabel className="mb-5 block">Responsible AI</SectionLabel>
             <h2 className="heading-lg mb-6">
-              AI that supports human judgment. Not AI that bypasses it.
+              AI that remains within the structure of human judgment.
             </h2>
             <p className="body-lg text-frost mb-6">
               The design posture of MagnaRix is that AI should make human decision-making
-              better informed, more rigorous, and more transparent — not obscure how
-              conclusions were reached or substitute for the authority that human
-              decision-makers hold.
+              better informed, more rigorous, and more transparent while leaving visible
+              how conclusions were reached and where authority remains.
             </p>
             <p className="body-lg text-frost">
               Every AI output in MagnaRix is marked as such, attributed, versioned, and
@@ -198,9 +210,9 @@ export default function PlatformPage() {
       </section>
 
       <CTASection
-        headline="Discuss the architecture with our team."
-        body="We welcome conversations with enterprise architects, CIOs, and technical evaluators who want to understand the platform design in depth."
-        secondaryLabel="Explore Use Cases"
+        headline="Conversations around the architecture are welcome."
+        body="We welcome serious discussion with those responsible for governance, architecture, and technical evaluation."
+        secondaryLabel="View Use Cases"
         secondaryHref="/use-cases"
       />
     </>
